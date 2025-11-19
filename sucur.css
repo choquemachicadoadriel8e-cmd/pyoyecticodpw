@@ -1,0 +1,143 @@
+
+/* ====== ESTILOS ESPECÍFICOS PARA SUCURSALES ====== */
+
+.branches {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.branch-card {
+  border: 1px solid #ffcccc;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.branch-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(135deg, #e63946 0%, #ff9f43 100%);
+}
+
+.branch-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-color: #e63946;
+}
+
+.branch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.branch-header h2 {
+  color: #e63946;
+  margin: 0;
+  font-size: 24px;
+}
+
+.branch-icon {
+  font-size: 28px;
+}
+
+.branch-card p {
+  margin-bottom: 12px;
+  font-size: 17px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.branch-card strong {
+  color: #333;
+}
+
+.branch-status {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.abierto {
+  background: rgba(46, 204, 113, 0.2);
+  color: #27ae60;
+}
+
+.cerrado {
+  background: rgba(231, 76, 60, 0.2);
+  color: #c23616;
+}
+
+.map-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.map-container h2 {
+  color: #e63946;
+  margin-bottom: 25px;
+  font-size: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+.map-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX}
+
+  /* ====== BOTONES MEJORADOS ====== */
+.main-nav button, .nav-link {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  border: 2px solid #e63946;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  margin: 8px;
+  box-shadow: 0 4px 6px rgba(230, 57, 70, 0.2);
+  font-size: 16px;
+  color: #e63946;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  min-width: 140px;
+}
+
+.main-nav button:hover, .nav-link:hover {
+  background: linear-gradient(to bottom, #e63946, #d62839);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(230, 57, 70, 0.3);
+  border-color: #e63946;
+}
+
+.main-nav button:active, .nav-link:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(230, 57, 70, 0.2);
+}
+
+/* Botones de categorías activos */
+.main-nav button.active {
+  background: linear-gradient(to bottom, #e63946, #d62839);
+  color: white;
+  box-shadow: 0 4px 8px rgba(230, 57, 70, 0.25);
+}
